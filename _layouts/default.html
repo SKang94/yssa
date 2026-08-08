@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description | strip_newlines }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description | strip_newlines }}">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2300376b'/><text x='16' y='22' font-size='15' font-family='Georgia,serif' font-weight='700' fill='white' text-anchor='middle'>Y</text></svg>">
+</head>
+<body>
+
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="site-head">
+  <div class="site-head__inner">
+    <a class="brand" href="{{ site.baseurl }}/">
+      <span class="brand__mark">YSSA</span>
+      <span class="brand__sub">Yonsei Survival Analysis Lab</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+      <span class="nav-toggle__bar"></span>
+      <span class="sr-only">메뉴 열기</span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="주 메뉴">
+      {%- assign here = page.url | remove: 'index.html' -%}
+      {%- for item in site.nav -%}
+        {%- assign target = item.url -%}
+        {%- assign is_current = false -%}
+        {%- if here == target -%}{%- assign is_current = true -%}{%- endif -%}
+        <a class="site-nav__link{% if is_current %} is-current{% endif %}"
+           href="{{ site.baseurl }}{{ target }}"
+           {% if is_current %}aria-current="page"{% endif %}>{{ item.name }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  {{ content }}
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="site-foot__grid">
+      <div>
+        <p class="site-foot__name">{{ site.lab.name_en }}</p>
+        <p class="site-foot__name-ko">{{ site.lab.name_ko }}</p>
+      </div>
+      <address class="site-foot__contact">
+        {%- assign prof = site.data.members.faculty[0] -%}
+        {{ prof.affiliation }}<br>
+        {{ prof.office }}<br>
+        <a href="mailto:{{ prof.email }}">{{ prof.email }}</a> · {{ prof.phone }}
+      </address>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 사진 파일이 아직 없는 구성원은 이니셜 아바타로 대체한다.
+// (error 이벤트는 버블링되지 않으므로 캡처 단계에서 듣는다)
+document.addEventListener('error', function (e) {
+  var el = e.target;
+  if (!el || el.tagName !== 'IMG' || !el.classList.contains('avatar')) return;
+  var box = document.createElement('div');
+  box.className = 'avatar avatar--initial';
+  box.setAttribute('aria-hidden', 'true');
+  box.textContent = el.getAttribute('data-initial') || '?';
+  el.parentNode.replaceChild(box, el);
+}, true);
+
+(function () {
+  var btn = document.getElementById('navToggle');
+  var nav = document.getElementById('siteNav');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+})();
+</script>
+
+</body>
+</html>

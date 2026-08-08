@@ -1,0 +1,40 @@
+---
+layout: default
+title: News
+permalink: /news/
+description: 연세대학교 생존분석연구실(YSSA) 소식입니다.
+---
+
+<div class="page-head">
+  <div class="wrap">
+    <h1>News</h1>
+    <p>연구실 소식을 전합니다.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap wrap--text">
+    {%- assign news_items = "" | split: "" -%}
+    {%- if site.data.news -%}{%- assign news_items = site.data.news -%}{%- endif -%}
+
+    {%- if news_items.size > 0 %}
+    <ul class="news-list">
+      {%- for n in news_items %}
+      <li class="news">
+        <div class="news__date">{{ n.date }}</div>
+        <div>
+          <h2 class="news__title">
+            {%- if n.link %}<a href="{{ n.link }}">{{ n.title }}</a>{% else %}{{ n.title }}{% endif -%}
+          </h2>
+          {%- if n.body %}<p class="news__body">{{ n.body }}</p>{% endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <div class="empty">
+      <p>아직 등록된 소식이 없습니다.</p>
+    </div>
+    {%- endif %}
+  </div>
+</section>

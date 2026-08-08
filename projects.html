@@ -1,0 +1,70 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+description: 연세대학교 생존분석연구실(YSSA)이 수행 중인 연구 과제입니다.
+---
+
+{%- assign ongoing = site.data.projects | where: 'status', 'ongoing' -%}
+{%- assign past = site.data.projects | where: 'status', 'past' -%}
+
+<div class="page-head">
+  <div class="wrap">
+    <h1>Projects</h1>
+    <p>연구실에서 수행 중이거나 수행한 연구 과제입니다.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>진행 중인 과제</h2>
+      <span class="section__count">On-going · {{ ongoing.size }}건</span>
+    </div>
+
+    {%- if ongoing.size > 0 %}
+    <ul class="proj-list">
+      {%- for p in ongoing %}
+      <li class="proj">
+        <div class="proj__period">{{ p.period }}</div>
+        <div>
+          <h3 class="proj__title">{{ p.title }}</h3>
+          <p class="proj__meta">
+            <span class="tag">{{ p.role }}</span>
+            <span>{{ p.funder }}</span>
+          </p>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <div class="empty"><p>진행 중인 과제가 없습니다.</p></div>
+    {%- endif %}
+  </div>
+</section>
+
+{%- if past.size > 0 %}
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>완료된 과제</h2>
+      <span class="section__count">{{ past.size }}건</span>
+    </div>
+
+    <ul class="proj-list">
+      {%- for p in past %}
+      <li class="proj">
+        <div class="proj__period">{{ p.period }}</div>
+        <div>
+          <h3 class="proj__title">{{ p.title }}</h3>
+          <p class="proj__meta">
+            <span class="tag">{{ p.role }}</span>
+            <span>{{ p.funder }}</span>
+          </p>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}

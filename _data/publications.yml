@@ -1,0 +1,128 @@
+# 저널 논문 — 새 논문은 맨 위에 추가하세요.
+#
+# 항목 형식
+#   authors : 저자 (**굵게** 표시 가능. 교신저자는 * 로 표기)
+#   year    : 연도 (숫자) — 이 값으로 연도별 그룹이 자동 생성됩니다
+#   title   : 논문 제목
+#   venue   : 학술지/학회 이름 (기울임체로 출력)
+#   detail  : 권(호), 페이지 등  [선택]
+#   note    : "(Accepted)" 같은 상태 표시  [선택]
+#   doi     : DOI URL  [선택]
+#   link    : 그 외 링크(PDF 등)  [선택]
+
+- authors: "Jung, E., **S. Kang**, and H. Kim"
+  year: 2026
+  title: "Association of Periodontitis and Tooth Loss with Cerebrovascular Disease: A Nationwide Population-Based Cohort Study"
+  venue: "Journal of Periodontology"
+  note: "(Accepted)"
+
+- authors: "Oh, S., H. Lee, **S. Kang**, and B. Seo"
+  year: 2026
+  title: "Adaptive Accelerated Failure Time modeling with a Semiparametric Skewed Error"
+  venue: "Computational Statistics and Data Analysis"
+  detail: "219, 108357"
+  doi: "https://doi.org/10.1016/j.csda.2026.108357"
+
+- authors: "Park, J., D. Kim, C. Kim, H. Park, **S. Kang**, and G. Kim"
+  year: 2025
+  title: "KSP: Kolmogorov-Smirnov metric-based Post-Hoc Calibration for Survival Analysis"
+  venue: "NeurIPS 2025"
+  link: "https://openreview.net/pdf/bbd9e5261e2937c13e74561bb86350119596c69c.pdf"
+
+- authors: "Park, J.-y., T. Song, J. Kim\\*, and **S. Kang**\\*"
+  year: 2025
+  title: "Cardiovascular Safety of Prokinetics: a Self-controlled Case Series Study using a Korean Nationwide Health Claims Database"
+  venue: "Cardiovascular Toxicology"
+  doi: "https://doi.org/10.1007/s12012-025-10044-0"
+
+- authors: "Park, J., **S. Kang**, and G. Kim"
+  year: 2025
+  title: "Stochastic Explicit Calibration Algorithm for Survival Models"
+  venue: "IEEE Access"
+  detail: "13, 78679–78706"
+  doi: "https://doi.org/10.1109/ACCESS.2025.3566156"
+
+- authors: "Choi, K., and **S. Kang**\\*"
+  year: 2025
+  title: "Efficient Case-cohort Design using Balanced Sampling"
+  venue: "Journal of Statistical Computation and Simulation"
+  detail: "95(8), 1682–1708"
+  doi: "https://doi.org/10.1080/00949655.2025.2469907"
+
+- authors: "Kim, K., **S. Kang**\\*, and S. H. Chiou\\*"
+  year: 2025
+  title: "Fitting a Quantile Regression Model for Residual Life with the R Package qris"
+  venue: "The R Journal"
+  detail: "16(1), 114–134"
+  doi: "https://doi.org/10.32614/RJ-2024-007"
+
+- authors: "Kim, G., J. Park, and **S. Kang**\\*"
+  year: 2024
+  title: "Deep Neural Network Based Accelerated Failure Time Models using Rank Loss"
+  venue: "Statistics in Medicine"
+  detail: "43, 5331–5343"
+  doi: "https://doi.org/10.1002/sim.10235"
+
+- authors: "Kim, S., Y. Cho, H. Ki, S. Park, D. Oh, S. Lee, Y. Cho, J. Kim, W. Lee, J. Park\\*, I. Jin\\*, and **S. Kang**\\*"
+  year: 2024
+  title: "Improved Mean Field Estimates of GEMS AOD L3 Product: Using Spatio-temporal Variability"
+  venue: "Atmospheric Measurement Techniques"
+  detail: "17(17), 5221–5241"
+  doi: "https://doi.org/10.5194/egusphere-2024-604"
+
+- authors: "Bae, W., D. Choi, J. Yan, and **S. Kang**\\*"
+  year: 2024
+  title: "A General Model-checking Procedure for Semiparametric Accelerated Failure Time Models"
+  venue: "Statistics and Computing"
+  detail: "34, 117"
+  doi: "https://doi.org/10.1007/s11222-024-10431-7"
+
+- authors: "Kim, S., Y. Choi, **S. Kang**\\*, and Korea HIV/AIDS Cohort Study"
+  year: 2024
+  title: "Smoothed Quantile Residual Life Regression Analysis with Application to the Korea HIV/AIDS Cohort Study"
+  venue: "BMC Medical Research Methodology"
+  detail: "24, 44"
+  doi: "https://doi.org/10.1186/s12874-024-02159-9"
+
+- authors: "Kim, K., D. J. Caplan, and **S. Kang**\\*"
+  year: 2023
+  title: "Smoothed quantile regression for censored residual life"
+  venue: "Computational Statistics"
+  detail: "38, 1001–1022"
+  doi: "https://doi.org/10.1007/s00180-022-01262-z"
+
+- authors: "Son, D., S. Choi, and **S. Kang**\\*"
+  year: 2023
+  title: "Smoothed Quantile Regression Analysis of Competing Risks for Stratified Case-cohort Data"
+  venue: "Journal of Statistical Computation and Simulation"
+  detail: "93(8), 1225–1243"
+
+- authors: "Seo, B., and **S. Kang**\\*"
+  year: 2023
+  title: "Accelerated Failure Time Modeling via Nonparametric Scale Mixtures"
+  venue: "Biometrics"
+  detail: "79(1), 165–177"
+
+- authors: "Hwang, S., H. Oh, R. M, **S. Kang**, and H. Kim"
+  year: 2022
+  title: "Association of periodontitis, missing teeth, and oral hygiene behaviors with the incidence of hypertension in middle-aged and older adults in Korea: A 10-year follow-up study"
+  venue: "Journal of Periodontology"
+  detail: "93(9), 1283–1293"
+
+- authors: "Park, J.-y., J. Yoo, J. Jeon, J. Kim\\*, and **S. Kang**\\*"
+  year: 2022
+  title: "Proton Pump Inhibitors and Risk of Cardiovascular Disease: A Self-Controlled Case Series Study"
+  venue: "The American Journal of Gastroenterology"
+  detail: "117(7), 1063–1071"
+
+- authors: "Kim, K., J. Ko, and **S. Kang**\\*"
+  year: 2021
+  title: "Comparison of Variance Estimation Methods in Semiparametric Accelerated Failure Time Models for Multivariate Failure Time Data"
+  venue: "Japanese Journal of Statistics and Data Science"
+  detail: "4, 1179–1202"
+
+- authors: "Lu, T.-s., **S. Kang**\\*, and H. Zhou"
+  year: 2020
+  title: "Semiparametric accelerated failure time modeling for multivariate failure times under multivariate outcome-dependent sampling designs"
+  venue: "Statistics and Its Interface"
+  detail: "13(3), 373–383"

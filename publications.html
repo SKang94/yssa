@@ -1,0 +1,96 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+description: 연세대학교 생존분석연구실(YSSA)의 저널 논문, 심사 중 논문, R 패키지 목록입니다.
+---
+
+<div class="page-head">
+  <div class="wrap">
+    <h1>Publications</h1>
+    <p><strong>*</strong> 표시는 교신저자(corresponding author)입니다.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Journal Publications</h2>
+      <span class="section__count">{{ site.data.publications.size }}편</span>
+    </div>
+
+    {%- assign by_year = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}
+    {%- for group in by_year %}
+    <div class="pub-year">
+      <div class="pub-year__y">{{ group.name }}</div>
+      <ul class="pub-list">
+        {%- for pub in group.items %}
+        <li class="pub">
+          <span class="pub__authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+          ({{ pub.year }}).
+          <span class="pub__title">{{ pub.title }}.</span>
+          <span class="pub__venue">{{ pub.venue }}</span>{% if pub.detail %}<span class="pub__detail">, {{ pub.detail }}</span>{% endif %}.
+          {%- if pub.note %} <span class="pub__note">{{ pub.note }}</span>{% endif %}
+
+          {%- if pub.doi or pub.link %}
+          <span class="pub__links">
+            {%- if pub.doi %}<a class="pub__link" href="{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+            {%- if pub.link %}<a class="pub__link" href="{{ pub.link }}" target="_blank" rel="noopener">PDF · link</a>{% endif %}
+          </span>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Submitted · Under Revision · Archived</h2>
+      <span class="section__count">{{ site.data.preprints.size }}편</span>
+    </div>
+
+    <ul class="pub-list">
+      {%- for pub in site.data.preprints %}
+      <li class="pub">
+        <span class="pub__authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+        ({{ pub.year }}).
+        <span class="pub__title">{{ pub.title }}.</span>
+        {%- if pub.link %}
+        <span class="pub__links">
+          <a class="pub__link" href="{{ pub.link }}" target="_blank" rel="noopener">preprint</a>
+        </span>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Software</h2>
+      <span class="section__count">R packages</span>
+    </div>
+
+    <ul class="cards">
+      {%- for s in site.data.software %}
+      <li class="card">
+        <div class="card__label">R package · v{{ s.version }}</div>
+        <h3 class="card__title"><code>{{ s.name }}</code></h3>
+        <p class="card__desc">{{ s.description }}</p>
+        <p class="card__meta">
+          {{ s.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }} ({{ s.year }})
+        </p>
+        <p class="card__meta" style="margin-top:.6rem;">
+          <a href="{{ s.link }}" target="_blank" rel="noopener">CRAN에서 보기 →</a>
+        </p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

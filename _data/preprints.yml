@@ -1,0 +1,27 @@
+# 심사 중 / 수정 중 / 프리프린트
+# 게재가 확정되면 이 목록에서 지우고 publications.yml 로 옮기세요.
+
+- authors: "Kim, D., **S. Kang**, and J. Sohn"
+  year: "2026+"
+  title: "SurvLIFT: Language-Interfaced Fine-Tuning for Direct Survival Prediction from Censored Data"
+
+- authors: "Park, J., **S. Kang**, and G. Kim"
+  year: "2026+"
+  title: "Beyond Marginal Calibration for Survival Analysis: Improved Post-processing via Attribute-adaptive and Locally Weighted Approach"
+
+- authors: "Bae, W., D. Choi, J. Yan\\*, and **S. Kang**\\*"
+  year: "2026+"
+  title: "Diagnostics for Semiparametric Accelerated Failure Time Models with R Package afttest"
+  link: "https://arxiv.org/abs/2511.09823"
+
+- authors: "Park, J.-y., B. Seo, J. Kim\\*, and **S. Kang**\\*"
+  year: "2025+"
+  title: "Accelerated failure time modeling with time-dependent covariates: a nonparametric mixture approach"
+
+- authors: "Hwang, S., H. Kim, **S. Kang**, J. Kim, S. Song, and G. Park"
+  year: "2025+"
+  title: "Longitudinal association of periodontitis with the incidence of metabolic syndrome: a 9-year Korean cohort study using Cox regression"
+
+- authors: "Zhu, W., J. Yu, S. H. Chiou, **S. Kang**, and D. Bandyopadhyay"
+  year: "2025+"
+  title: "A Smoothed Weighted Generalized Estimating Equation Approach to Mixture Cure Survival with Informative Cluster Size"

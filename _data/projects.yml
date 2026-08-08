@@ -1,0 +1,14 @@
+# 연구 과제
+# status: ongoing | past   (past 로 바꾸면 '완료된 과제' 목록으로 내려갑니다)
+
+- status: ongoing
+  period: "2023.06 – 2030.02"
+  funder: NRF
+  title: "Resilient Autonomous Grid Research Center (ERC)"
+  role: "Co-I"
+
+- status: ongoing
+  period: "2024.05 – 2028.04"
+  funder: NRF
+  title: "Developing efficient sampling methods and statistical inferences for massive survival data"
+  role: "PI"

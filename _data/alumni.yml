@@ -1,0 +1,70 @@
+# 졸업생 — 연도별. 새 졸업생은 해당 연도 people 목록 맨 위에 추가하세요.
+# after: 졸업 후 진로 (없으면 생략 가능)
+
+- year: 2026
+  people:
+    - { name_ko: 김민주, name_en: M. Kim,    degree: 석사 }
+    - { name_ko: 배소연, name_en: S. Y. Bae, degree: 석사 }
+    - { name_ko: 안세민, name_en: S. Ahn,    degree: 석사 }
+    - { name_ko: 이주엽, name_en: J. Lee,    degree: 석사 }
+
+- year: 2025
+  people:
+    - { name_ko: 권혁필, name_en: H. Kwon,   degree: 석사, after: 국내 회사 }
+    - { name_ko: 정재희, name_en: J. Jeong,  degree: 석사 }
+
+- year: 2024
+  people:
+    - { name_ko: 김수민, name_en: S. Kim,    degree: 박사, after: 국가 기관 }
+    - { name_ko: 박주영, name_en: J. Park,   degree: 박사, after: 국내 Y 대학교 통계학과 조교수 }
+    - { name_ko: 최가음, name_en: K. Choi,   degree: 석사, after: 미국 E 대학교 박사과정 }
+    - { name_ko: 강진영, name_en: J. Kang,   degree: 석사 }
+
+- year: 2023
+  people:
+    - { name_ko: 박태석, name_en: T. Park,   degree: 석사, after: 미국 T 대학교 박사과정 }
+    - { name_ko: 안결,   name_en: G. Ahn,    degree: 석사, after: 국내 회사 }
+    - { name_ko: 이경희, name_en: K. Lee,    degree: 석사, after: 국내 회사 }
+
+- year: 2022
+  people:
+    - { name_ko: 김규현, name_en: K. Kim,    degree: 박사, after: 국내 회사 }
+    - { name_ko: 서민희, name_en: M. Seo,    degree: 석사, after: 미국 C 대학교 박사과정 }
+    - { name_ko: 박인서, name_en: R. Park,   degree: 석사, after: 미국 S 대학교 박사과정 }
+    - { name_ko: 이영로, name_en: Y. Lee,    degree: 석사, after: 국가 기관 }
+
+- year: 2021
+  people:
+    - { name_ko: 임선우, name_en: S. Lim,    degree: 석사, after: 국내 회사 }
+
+- year: 2019
+  people:
+    - { name_ko: 강혜원, name_en: H. Kang,   degree: 석사, after: 국내 회사 }
+    - { name_ko: 고정열, name_en: J. Ko,     degree: 석사, after: 국내 회사 }
+    - { name_ko: 김익태, name_en: I. Kim,    degree: 석사, after: 국내 회사 }
+
+- year: 2018
+  people:
+    - { name_ko: 박민섭, name_en: M. Park,   degree: 석사, after: 국가 연구원 }
+    - { name_ko: 박세호, name_en: S. Park,   degree: 석사, after: 국내 회사 }
+    - { name_ko: 배우정, name_en: W. Bae,    degree: 석사, after: 미국 F 대학교 박사, 미국 국가 기관 }
+    - { name_ko: 손동재, name_en: D. Son,    degree: 석사, after: 미국 N 대학교 박사과정, 독일 포닥 }
+    - { name_ko: 이정홍, name_en: J. Lee,    degree: 석사, after: 국내 회사 }
+    - { name_ko: 최동락, name_en: D. Choi,   degree: 석사, after: 미국 D 대학교 박사, 미국 회사 }
+
+- year: 2017
+  people:
+    - { name_ko: 고태석, name_en: T. Ko,     degree: 석사, after: 국내 회사 }
+    - { name_ko: 이재엽, name_en: J. Lee,    degree: 석사, after: 국내 회사 }
+
+- year: 2016
+  people:
+    - { name_ko: 김미경, name_en: M. Kim,    degree: 석사, after: 국내 회사 }
+    - { name_ko: 임우빈, name_en: W. Lim,    degree: 석사, after: 미국 O 대학교 박사, 미국 국가 기관 }
+    - { name_ko: 유미리, name_en: M. Yoo,    degree: 석사, after: 미국 M 대학교 박사과정 }
+    - { name_ko: 이현진, name_en: H. Lee,    degree: 석사, after: 국내 회사 }
+
+- year: 2015
+  people:
+    - { name_ko: 경현태, name_en: H. Kyung,  degree: 석사, after: 국내 회사 }
+    - { name_ko: 이다혜, name_en: D. Lee,    degree: 석사, after: 국가 기관 }

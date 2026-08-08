@@ -1,0 +1,35 @@
+# 연구실 구성원
+# photo: assets/members/ 폴더에 사진 파일을 넣고 파일명을 적으세요.
+#        비워두면 이름 이니셜 아바타가 자동으로 표시됩니다.
+
+faculty:
+  - name_ko: 강상욱
+    name_en: Sangwook Kang
+    role: 교수 (Professor)
+    photo: kang-sangwook.jpg
+    affiliation: 연세대학교 상경대학 응용통계학과 / 통계데이터사이언스학과
+    office: 대우관 529호
+    phone: "02-2123-2538"
+    email: kanggi1@yonsei.ac.kr
+
+groups:
+  - title: 박사 · 석박통합과정
+    people:
+      - { name_ko: 임지선, name_en: J. Lim,   role: 석박통합과정, photo: lim-jiseon.jpg }
+      - { name_ko: 박은영, name_en: E. Park,  role: 박사과정,     photo: park-eunyoung.jpg }
+      - { name_ko: 김다흰, name_en: D. Kim,   role: 석박통합과정, photo: kim-dahin.jpg }
+      - { name_ko: 박정호, name_en: J. Park,  role: 석박통합과정, photo: park-jeongho.jpg }
+      - { name_ko: 김다현, name_en: D. Kim,   role: 석박통합과정, photo: kim-dahyun.jpg }
+      - { name_ko: 권혁필, name_en: H. Kwon,  role: 박사과정,     photo: kwon-hyeokpil.jpg }
+      - { name_ko: 신재영, name_en: J. Shin,  role: 박사과정, note: 이지현 교수님과 공동지도, photo: shin-jaeyoung.jpg }
+
+  - title: 석사과정
+    people:
+      - { name_ko: 김가연, name_en: G. Kim,   role: 석사과정, photo: kim-gayeon.jpg }
+      - { name_ko: 송명근, name_en: M. Song,  role: 석사과정, photo: song-myeonggeun.jpg }
+      - { name_ko: 김주영, name_en: J. Kim,   role: 석사과정, photo: kim-juyoung.jpg }
+      - { name_ko: 윤지원, name_en: J. Yoon,  role: 석사과정, photo: yoon-jiwon.jpg }
+
+  - title: 학부연구생
+    people:
+      - { name_ko: 배소윤, name_en: S. Bae,   role: 학부연구생, photo: bae-soyoon.jpg }

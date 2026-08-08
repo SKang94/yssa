@@ -1,0 +1,99 @@
+---
+layout: default
+title: Members
+permalink: /members/
+description: 연세대학교 생존분석연구실(YSSA) 구성원과 졸업생 명단입니다.
+---
+
+{%- assign prof = site.data.members.faculty[0] -%}
+
+<div class="page-head">
+  <div class="wrap">
+    <h1>Members</h1>
+    <p>연구실 구성원과 졸업생입니다.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head"><h2>지도교수</h2></div>
+
+    <div class="prof">
+      {%- if prof.photo and prof.photo != '' %}
+      <img class="avatar" src="{{ site.baseurl }}/assets/members/{{ prof.photo }}"
+           alt="{{ prof.name_ko }} 교수" loading="lazy"
+           data-initial="{{ prof.name_en | slice: 0 }}">
+      {%- else %}
+      <div class="avatar avatar--initial" aria-hidden="true">{{ prof.name_en | slice: 0 }}</div>
+      {%- endif %}
+
+      <div>
+        <h3 class="prof__name">{{ prof.name_ko }} <span>({{ prof.name_en }})</span></h3>
+        <p class="prof__role">{{ prof.role }}</p>
+
+        <dl class="prof__facts">
+          <div><dt>소속</dt><dd>{{ prof.affiliation }}</dd></div>
+          <div><dt>연구실</dt><dd>{{ prof.office }}</dd></div>
+          <div><dt>전화</dt><dd>{{ prof.phone }}</dd></div>
+          <div><dt>이메일</dt><dd><a href="mailto:{{ prof.email }}">{{ prof.email }}</a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- for group in site.data.members.groups %}
+<section class="section{% if forloop.index0 == 0 %} section--alt{% endif %}">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>{{ group.title }}</h2>
+      <span class="section__count">{{ group.people.size }}명</span>
+    </div>
+
+    <ul class="people">
+      {%- for p in group.people %}
+      <li class="person">
+        {%- if p.photo and p.photo != '' %}
+        <img class="avatar" src="{{ site.baseurl }}/assets/members/{{ p.photo }}"
+             alt="{{ p.name_ko }}" loading="lazy"
+             data-initial="{{ p.name_en | slice: 0 }}">
+        {%- else %}
+        <div class="avatar avatar--initial" aria-hidden="true">{{ p.name_en | slice: 0 }}</div>
+        {%- endif %}
+        <div>
+          <p class="person__name">{{ p.name_ko }} <span>({{ p.name_en }})</span></p>
+          <p class="person__role">{{ p.role }}</p>
+          {%- if p.note %}<p class="person__note">{{ p.note }}</p>{% endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{%- endfor %}
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>졸업생</h2>
+      {%- assign alumni_count = 0 -%}
+      {%- for y in site.data.alumni -%}{%- assign alumni_count = alumni_count | plus: y.people.size -%}{%- endfor %}
+      <span class="section__count">{{ alumni_count }}명</span>
+    </div>
+
+    {%- for y in site.data.alumni %}
+    <div class="alumni-year">
+      <div class="alumni-year__y">{{ y.year }}</div>
+      <ul class="alumni-list">
+        {%- for p in y.people %}
+        <li>
+          <b>{{ p.name_ko }}</b>
+          <span class="deg">({{ p.name_en }}, {{ p.degree }})</span>
+          {%- if p.after %} <span class="after">{{ p.after }}</span>{% endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </div>
+</section>

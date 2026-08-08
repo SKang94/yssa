@@ -1,0 +1,38 @@
+title: YSSA
+tagline: YONSEI Survival Analysis Lab
+description: >-
+  연세대학교 생존분석연구실(YSSA)은 생존자료 분석을 위한 통계 방법론과
+  관련 이론을 개발하고 이를 실제 자료에 응용하는 연구를 수행합니다.
+
+# ── GitHub Pages 프로젝트 저장소용 설정 ────────────────────────────
+# 저장소 이름이 "yssa" 가 아니면 baseurl 을 저장소 이름으로 바꾸세요.
+# 나중에 yssa.yonsei.ac.kr 같은 커스텀 도메인을 연결하면
+# baseurl 을 "" 로 비우고 url 을 해당 도메인으로 바꿉니다.
+baseurl: "/yssa"
+url: ""
+
+lab:
+  name_en: YONSEI Survival Analysis (YSSA) lab
+  name_ko: 연세대학교 생존분석연구실
+  intro_en: >-
+    In YSSA, we work on developing statistical methods and relevant theories for
+    the analysis of survival data, and applying these to real survival data.
+  intro_ko: >-
+    연세대학교 생존분석연구실에서는 생존자료의 분석을 위한 방법론과 관련 이론을
+    개발하고 이를 실제 생존자료에 응용하는 연구를 진행합니다.
+
+nav:
+  - { name: Home,         url: /            }
+  - { name: Members,      url: /members/    }
+  - { name: Publications, url: /publications/ }
+  - { name: Projects,     url: /projects/   }
+  - { name: News,         url: /news/       }
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

@@ -1,0 +1,15 @@
+# 개발한 R 패키지 등 소프트웨어
+
+- name: afttest
+  version: "4.3.2.3"
+  authors: "Bae, W., D. Choi, and **S. Kang**"
+  year: 2022
+  description: "Model Diagnostics for Accelerated Failure Time Models"
+  link: "https://cran.r-project.org/package=afttest"
+
+- name: qris
+  version: "1.1.1"
+  authors: "Kim, K. H., **S. Kang**, and S. H. Chiou"
+  year: 2022
+  description: "Quantile Regression Model for Residual Lifetime Using an Induced Smoothing Approach"
+  link: "https://cran.r-project.org/package=qris"
