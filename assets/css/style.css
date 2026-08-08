@@ -337,6 +337,26 @@ a:hover { color: var(--accent); }
   background: var(--accent-wash); color: var(--accent); font-weight: 600;
 }
 
+/* ---------- embed (Padlet 등) -------------------------------------- */
+
+.section__link {
+  margin-left: auto; font-size: .88rem; font-weight: 600;
+  text-decoration: none; color: var(--accent-2); white-space: nowrap;
+}
+.section__link:hover { color: var(--accent); }
+
+.embed {
+  border: 1px solid var(--line-soft); border-radius: 14px; overflow: hidden;
+  background: var(--paper-alt); line-height: 0;
+}
+.embed iframe {
+  display: block; width: 100%; border: 0;
+  height: clamp(520px, 72vh, 820px);
+}
+.embed__fallback {
+  margin: .8rem 0 0; font-size: .86rem; color: var(--ink-3);
+}
+
 /* ---------- news -------------------------------------------------- */
 
 .news-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.4rem; }

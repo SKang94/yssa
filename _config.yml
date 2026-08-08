@@ -21,6 +21,15 @@ lab:
     연세대학교 생존분석연구실에서는 생존자료의 분석을 위한 방법론과 관련 이론을
     개발하고 이를 실제 생존자료에 응용하는 연구를 진행합니다.
 
+# News 페이지에 끼워 넣을 Padlet 게시판.
+# id 는 Padlet 주소 padlet.com/<사용자>/<이름>-<ID> 의 맨 뒤 <ID> 부분만 적습니다.
+#   예) padlet.com/kanggi1/yssa-za2h6l8ox4slv8l7  ->  id: za2h6l8ox4slv8l7
+# Padlet 을 쓰지 않으려면 아래 padlet 블록 전체를 지우거나 앞에 # 을 붙이세요.
+padlet:
+  id: "za2h6l8ox4slv8l7"
+  url: "https://padlet.com/kanggi1/yssa-za2h6l8ox4slv8l7"
+  heading: "YSSA 게시판"
+
 nav:
   - { name: Home,         url: /            }
   - { name: Members,      url: /members/    }
