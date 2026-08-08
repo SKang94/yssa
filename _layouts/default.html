@@ -8,7 +8,11 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
 <meta property="og:description" content="{{ page.description | default: site.description | strip_newlines }}">
 <meta property="og:type" content="website">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+{%- comment -%}
+  ?v= 뒤 숫자는 빌드할 때마다 바뀐다. 스타일을 고쳐도 방문자 브라우저가
+  옛 CSS 를 계속 쓰는 문제를 막기 위한 것이니 지우지 말 것.
+{%- endcomment -%}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2300376b'/><text x='16' y='22' font-size='15' font-family='Georgia,serif' font-weight='700' fill='white' text-anchor='middle'>Y</text></svg>">
 </head>
 <body>
