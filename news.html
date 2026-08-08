@@ -25,11 +25,12 @@ description: 연세대학교 생존분석연구실(YSSA) 소식입니다.
       {%- endif %}
     </div>
 
-    <div class="embed">
+    <div class="embed" id="padletBox">
+      <p class="embed__loading">게시판을 불러오는 중입니다…</p>
       <iframe
+        id="padletFrame"
         src="https://padlet.com/embed/{{ site.padlet.id }}"
         title="{{ site.padlet.heading | default: '게시판' }}"
-        loading="lazy"
         allow="camera; microphone; geolocation; clipboard-write"
         allowfullscreen></iframe>
     </div>
@@ -42,6 +43,18 @@ description: 연세대학교 생존분석연구실(YSSA) 소식입니다.
     {%- endif %}
   </div>
 </section>
+
+<script>
+// Padlet 은 불러오는 데 10초 이상 걸릴 수 있다. 그동안 빈 상자 대신 안내 문구를 보여준다.
+(function () {
+  var box = document.getElementById('padletBox');
+  var frame = document.getElementById('padletFrame');
+  if (!box || !frame) return;
+  var done = function () { box.classList.add('is-loaded'); };
+  frame.addEventListener('load', done);
+  setTimeout(done, 30000);   // 끝내 실패하면 안내 문구를 걷어내고 아래 링크로 유도
+})();
+</script>
 {%- endif %}
 
 {%- if news_items.size > 0 %}
