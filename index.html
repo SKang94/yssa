@@ -3,56 +3,40 @@ layout: default
 title: null
 ---
 
-{%- assign member_count = 0 -%}
-{%- for g in site.data.members.groups -%}
-  {%- assign member_count = member_count | plus: g.people.size -%}
-{%- endfor -%}
-{%- assign alumni_count = 0 -%}
-{%- for y in site.data.alumni -%}
-  {%- assign alumni_count = alumni_count | plus: y.people.size -%}
-{%- endfor -%}
-
 <section class="hero">
   <div class="wrap">
-    <p class="hero__eyebrow">Yonsei University · Department of Applied Statistics</p>
-    <h1>{{ site.lab.name_en }}</h1>
-    <p class="hero__ko">{{ site.lab.name_ko }}</p>
+    <div class="hero__grid{% if site.lab.photo and site.lab.photo != '' %} has-figure{% endif %}" id="heroGrid">
 
-    <div class="hero__intro">
-      <p class="is-lead">{{ site.lab.intro_en }}</p>
-      <p>{{ site.lab.intro_ko }}</p>
+      <div class="hero__text">
+        <p class="hero__eyebrow">Yonsei University · Department of Applied Statistics</p>
+        <h1>{{ site.lab.name_en }}</h1>
+        <p class="hero__ko">{{ site.lab.name_ko }}</p>
+
+        <div class="hero__intro">
+          <p class="is-lead">{{ site.lab.intro_en }}</p>
+          <p>{{ site.lab.intro_ko }}</p>
+        </div>
+      </div>
+
+      {%- if site.lab.photo and site.lab.photo != '' %}
+      <figure class="hero__figure" id="heroFigure">
+        <img src="{{ site.baseurl }}/assets/img/{{ site.lab.photo }}"
+             alt="{{ site.lab.photo_alt | default: site.lab.name_ko }}">
+        {%- if site.lab.photo_caption and site.lab.photo_caption != '' %}
+        <figcaption class="hero__caption">{{ site.lab.photo_caption }}</figcaption>
+        {%- endif %}
+      </figure>
+      {%- endif %}
+
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <ul class="stat-row">
-      <li class="stat">
-        <div class="stat__num">{{ site.data.publications.size }}</div>
-        <div class="stat__label">저널 논문</div>
-      </li>
-      <li class="stat">
-        <div class="stat__num">{{ site.data.preprints.size }}</div>
-        <div class="stat__label">심사 중 · 프리프린트</div>
-      </li>
-      <li class="stat">
-        <div class="stat__num">{{ member_count }}</div>
-        <div class="stat__label">현재 연구실 구성원</div>
-      </li>
-      <li class="stat">
-        <div class="stat__num">{{ alumni_count }}</div>
-        <div class="stat__label">졸업생</div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="section section--alt">
-  <div class="wrap">
     <div class="section__head">
       <h2>최근 논문</h2>
-      <span class="section__count">Recent publications</span>
+      <a class="section__link" href="{{ site.baseurl }}/publications/">전체 보기 →</a>
     </div>
 
     <ul class="pub-list">
@@ -66,12 +50,10 @@ title: null
       </li>
       {%- endfor %}
     </ul>
-
-    <a class="more-link" href="{{ site.baseurl }}/publications/">전체 논문 보기 <span>→</span></a>
   </div>
 </section>
 
-<section class="section">
+<section class="section section--alt">
   <div class="wrap">
     <div class="section__head">
       <h2>진행 중인 연구 과제</h2>
@@ -93,3 +75,18 @@ title: null
     </ul>
   </div>
 </section>
+
+<script>
+// 사진 파일을 아직 넣지 않았으면 빈 자리가 남지 않도록 그림 영역을 걷어낸다.
+(function () {
+  var fig = document.getElementById('heroFigure');
+  var grid = document.getElementById('heroGrid');
+  if (!fig || !grid) return;
+  var img = fig.querySelector('img');
+  if (!img) return;
+  img.addEventListener('error', function () {
+    fig.remove();
+    grid.classList.remove('has-figure');
+  });
+})();
+</script>

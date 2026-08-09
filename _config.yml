@@ -21,6 +21,14 @@ lab:
     연세대학교 생존분석연구실에서는 생존자료의 분석을 위한 방법론과 관련 이론을
     개발하고 이를 실제 생존자료에 응용하는 연구를 진행합니다.
 
+  # 첫 화면 소개 글 옆에 들어가는 사진.
+  #   assets/img/ 폴더에 파일을 넣고 아래 photo 에 파일명을 적으면 표시됩니다.
+  #   파일이 없으면 그림 영역이 자동으로 사라지고 글이 전체 폭을 씁니다.
+  #   사진을 아예 쓰지 않으려면 photo 를 "" 로 비우세요.
+  photo: "home.jpg"
+  photo_alt: "연세대학교 생존분석연구실"
+  photo_caption: ""
+
 # News 페이지에 끼워 넣을 Padlet 게시판.
 # id 는 Padlet 주소 padlet.com/<사용자>/<이름>-<ID> 의 맨 뒤 <ID> 부분만 적습니다.
 #   예) padlet.com/kanggi1/yssa-za2h6l8ox4slv8l7  ->  id: za2h6l8ox4slv8l7
