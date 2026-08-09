@@ -68,16 +68,26 @@
 
 <script>
 // 사진 파일이 아직 없는 구성원은 이니셜 아바타로 대체한다.
-// (error 이벤트는 버블링되지 않으므로 캡처 단계에서 듣는다)
-document.addEventListener('error', function (e) {
-  var el = e.target;
+function replaceAvatar(el) {
   if (!el || el.tagName !== 'IMG' || !el.classList.contains('avatar')) return;
   var box = document.createElement('div');
   box.className = 'avatar avatar--initial';
   box.setAttribute('aria-hidden', 'true');
   box.textContent = el.getAttribute('data-initial') || '?';
-  el.parentNode.replaceChild(box, el);
-}, true);
+  if (el.parentNode) el.parentNode.replaceChild(box, el);
+}
+
+// error 이벤트는 버블링되지 않으므로 캡처 단계에서 듣는다.
+document.addEventListener('error', function (e) { replaceAvatar(e.target); }, true);
+
+// 이 스크립트가 실행되기 전에 이미 실패한 이미지는 위 이벤트를 놓친다.
+// 남아 있는 깨진 이미지를 훑어 마저 처리한다.
+document.addEventListener('DOMContentLoaded', function () {
+  var imgs = document.querySelectorAll('img.avatar');
+  for (var i = 0; i < imgs.length; i++) {
+    if (imgs[i].complete && imgs[i].naturalWidth === 0) replaceAvatar(imgs[i]);
+  }
+});
 
 (function () {
   var btn = document.getElementById('navToggle');

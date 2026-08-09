@@ -84,9 +84,18 @@ title: null
   if (!fig || !grid) return;
   var img = fig.querySelector('img');
   if (!img) return;
-  img.addEventListener('error', function () {
+
+  var hide = function () {
     fig.remove();
     grid.classList.remove('has-figure');
-  });
+  };
+
+  // 이미지 로드 실패는 이 스크립트가 실행되기 전에 이미 끝났을 수 있다.
+  // 그 경우 error 이벤트를 놓치므로 현재 상태를 직접 확인한다.
+  if (img.complete) {
+    if (img.naturalWidth === 0) hide();
+  } else {
+    img.addEventListener('error', hide);
+  }
 })();
 </script>
