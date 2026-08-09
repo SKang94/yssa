@@ -53,29 +53,6 @@ title: null
   </div>
 </section>
 
-<section class="section section--alt">
-  <div class="wrap">
-    <div class="section__head">
-      <h2>진행 중인 연구 과제</h2>
-    </div>
-
-    <ul class="proj-list">
-      {%- for p in site.data.projects %}{% if p.status == 'ongoing' %}
-      <li class="proj">
-        <div class="proj__period">{{ p.period }}</div>
-        <div>
-          <h3 class="proj__title">{{ p.title }}</h3>
-          <p class="proj__meta">
-            <span class="tag">{{ p.role }}</span>
-            <span>{{ p.funder }}</span>
-          </p>
-        </div>
-      </li>
-      {%- endif %}{% endfor %}
-    </ul>
-  </div>
-</section>
-
 <script>
 // 사진 파일을 아직 넣지 않았으면 빈 자리가 남지 않도록 그림 영역을 걷어낸다.
 (function () {
