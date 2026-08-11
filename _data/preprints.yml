@@ -7,15 +7,16 @@
 - authors: "Jung, E., **S. Kang**, and H. Kim"
   year: "2026+"
   title: "Association of Periodontitis and Tooth Loss with Cerebrovascular Disease: A Nationwide Population-Based Cohort Study"
-  note: "Under revision, Journal of Periodontology"
+  #note: "Under revision, Journal of Periodontology"
+  #note: "Under revision"
 
-- authors: "Kim, D., **S. Kang**, and J. Sohn"
-  year: "2026+"
-  title: "SurvLIFT: Language-Interfaced Fine-Tuning for Direct Survival Prediction from Censored Data"
+#- authors: "Kim, D., **S. Kang**, and J. Sohn"
+#  year: "2026+"
+#  title: "SurvLIFT: Language-Interfaced Fine-Tuning for Direct Survival Prediction from Censored Data"
 
-- authors: "Park, J., **S. Kang**, and G. Kim"
-  year: "2026+"
-  title: "Beyond Marginal Calibration for Survival Analysis: Improved Post-processing via Attribute-adaptive and Locally Weighted Approach"
+#- authors: "Park, J., **S. Kang**, and G. Kim"
+#  year: "2026+"
+#  title: "Beyond Marginal Calibration for Survival Analysis: Improved Post-processing via Attribute-adaptive and Locally Weighted Approach"
 
 - authors: "Bae, W., D. Choi, J. Yan\\*, and **S. Kang**\\*"
   year: "2026+"
