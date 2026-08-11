@@ -59,6 +59,7 @@ description: 연세대학교 생존분석연구실(YSSA)의 저널 논문, 심�
         <span class="pub__authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
         ({{ pub.year }}).
         <span class="pub__title">{{ pub.title }}.</span>
+        {%- if pub.note %} <span class="pub__note">{{ pub.note }}</span>{% endif %}
         {%- if pub.link %}
         <span class="pub__links">
           <a class="pub__link" href="{{ pub.link }}" target="_blank" rel="noopener">preprint</a>

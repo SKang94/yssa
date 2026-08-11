@@ -1,5 +1,13 @@
 # 심사 중 / 수정 중 / 프리프린트
 # 게재가 확정되면 이 목록에서 지우고 publications.yml 로 옮기세요.
+#
+# note: 진행 상태를 적으면 제목 뒤에 표시됩니다. (선택)
+#       예) "Under revision, Journal of Periodontology"
+
+- authors: "Jung, E., **S. Kang**, and H. Kim"
+  year: "2026+"
+  title: "Association of Periodontitis and Tooth Loss with Cerebrovascular Disease: A Nationwide Population-Based Cohort Study"
+  note: "Under revision, Journal of Periodontology"
 
 - authors: "Kim, D., **S. Kang**, and J. Sohn"
   year: "2026+"
