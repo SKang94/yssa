@@ -10,6 +10,12 @@
 #   doi     : DOI URL  [선택]
 #   link    : 그 외 링크(PDF 등)  [선택]
 
+- authors: "Hwang, S., H. Kim, **S. Kang**, J. Kim, S. Song, and G. Park"
+  year: 2026
+  title: "Association of periodontitis with incidence of metabolic syndrome in Korea: A retrospective cohort study"
+  venue: "Journal of Periodontology"
+  doi: "https://doi.org/10.1002/jper.70169"
+
 - authors: "Jung, E., **S. Kang**, and H. Kim"
   year: 2026
   title: "Association of Periodontitis and Tooth Loss with Cerebrovascular Disease: A Nationwide Population-Based Cohort Study"
