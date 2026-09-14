@@ -11,7 +11,7 @@
 #   link    : 그 외 링크(PDF 등)  [선택]
 
 - authors: "Bae, W., D. Choi, J. Yan\\*, and **S. Kang**\\*"
-  year: "2026+"
+  year: "2026"
   title: "Diagnostics for Semiparametric Accelerated Failure Time Models with R Package afttest"
   venue: "Journal of Statistical Software"
   note: (Provisionally) accepted
