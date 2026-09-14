@@ -10,6 +10,13 @@
 #   doi     : DOI URL  [선택]
 #   link    : 그 외 링크(PDF 등)  [선택]
 
+- authors: "Bae, W., D. Choi, J. Yan\\*, and **S. Kang**\\*"
+  year: "2026+"
+  title: "Diagnostics for Semiparametric Accelerated Failure Time Models with R Package afttest"
+  venue: "Journal of Statistical Software"
+  note: (Provisionally) accepted
+  link: "https://arxiv.org/abs/2511.09823"
+
 - authors: "Hwang, S., H. Kim, **S. Kang**, J. Kim, S. Song, and G. Park"
   year: 2026
   title: "Association of periodontitis with incidence of metabolic syndrome in Korea: A retrospective cohort study"
