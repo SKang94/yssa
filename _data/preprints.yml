@@ -18,14 +18,10 @@
 #  year: "2026+"
 #  title: "Beyond Marginal Calibration for Survival Analysis: Improved Post-processing via Attribute-adaptive and Locally Weighted Approach"
 
-- authors: "Bae, W., D. Choi, J. Yan\\*, and **S. Kang**\\*"
-  year: "2026+"
-  title: "Diagnostics for Semiparametric Accelerated Failure Time Models with R Package afttest"
-  link: "https://arxiv.org/abs/2511.09823"
-
 - authors: "Park, J.-y., B. Seo, J. Kim\\*, and **S. Kang**\\*"
   year: "2025+"
   title: "Accelerated failure time modeling with time-dependent covariates: a nonparametric mixture approach"
+  note: "Under revision"
 
 - authors: "Zhu, W., J. Yu, S. H. Chiou, **S. Kang**, and D. Bandyopadhyay"
   year: "2025+"
