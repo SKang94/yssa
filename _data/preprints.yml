@@ -4,7 +4,7 @@
 # note: 진행 상태를 적으면 제목 뒤에 표시됩니다. (선택)
 #       예) "Under revision, Journal of Periodontology"
 
-- authors: "Baik, M., J.-y. Park, J. Jeon, J. Yoo, **J. Kim**, and **S. Kang**"
+- authors: "Baik, M., J.-y. Park, J. Jeon, J. Yoo, J. Kim\\*, and **S. Kang**\\*"
   year: "2026+"
   title: "eGFR Level Versus Rate of Decline and Incident Atrial Fibrillation: A Joint Modeling Analysis"
   #note: "Under revision, Journal of Periodontology"
