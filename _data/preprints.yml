@@ -4,6 +4,10 @@
 # note: 진행 상태를 적으면 제목 뒤에 표시됩니다. (선택)
 #       예) "Under revision, Journal of Periodontology"
 
+- authors: "Park, J., **S. Kang**, and G. Kim"
+  year: "2026+"
+  title: "POST-HOC SELF-CORRECTION FOR CONDITIONAL CALIBRATION OF SURVIVAL MODELS"
+
 - authors: "Baik, M., J.-y. Park, J. Jeon, J. Yoo, J. Kim\\*, and **S. Kang**\\*"
   year: "2026+"
   title: "eGFR Level Versus Rate of Decline and Incident Atrial Fibrillation: A Joint Modeling Analysis"
@@ -18,10 +22,6 @@
 #- authors: "Kim, D., **S. Kang**, and J. Sohn"
 #  year: "2026+"
 #  title: "SurvLIFT: Language-Interfaced Fine-Tuning for Direct Survival Prediction from Censored Data"
-
-#- authors: "Park, J., **S. Kang**, and G. Kim"
-#  year: "2026+"
-#  title: "Beyond Marginal Calibration for Survival Analysis: Improved Post-processing via Attribute-adaptive and Locally Weighted Approach"
 
 - authors: "Park, J.-y., B. Seo, J. Kim\\*, and **S. Kang**\\*"
   year: "2025+"
