@@ -8,7 +8,7 @@
   year: "2026+"
   title: "POST-HOC SELF-CORRECTION FOR CONDITIONAL CALIBRATION OF SURVIVAL MODELS"
 
-- authors: "Baik, M., J.-y. Park, J. Jeon, J. Yoo, J. Kim\\*, and **S. Kang**\\*"
+- authors: "Baik, M., **J.-y. Park**, J. Jeon, J. Yoo, J. Kim\\*, and **S. Kang**\\*"
   year: "2026+"
   title: "eGFR Level Versus Rate of Decline and Incident Atrial Fibrillation: A Joint Modeling Analysis"
   #note: "Under revision, Journal of Periodontology"
@@ -23,7 +23,7 @@
 #  year: "2026+"
 #  title: "SurvLIFT: Language-Interfaced Fine-Tuning for Direct Survival Prediction from Censored Data"
 
-- authors: "Park, J.-y., B. Seo, J. Kim\\*, and **S. Kang**\\*"
+- authors: "**Park, J.-y.**, B. Seo, J. Kim\\*, and **S. Kang**\\*"
   year: "2025+"
   title: "Accelerated failure time modeling with time-dependent covariates: a nonparametric mixture approach"
   note: "Under revision"
