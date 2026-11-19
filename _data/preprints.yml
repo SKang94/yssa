@@ -4,7 +4,7 @@
 # note: 진행 상태를 적으면 제목 뒤에 표시됩니다. (선택)
 #       예) "Under revision, Journal of Periodontology"
 
-- authors: "Park, J., **S. Kang**, and G. Kim"
+- authors: "**Park, J.**, **S. Kang**, and G. Kim"
   year: "2026+"
   title: "POST-HOC SELF-CORRECTION FOR CONDITIONAL CALIBRATION OF SURVIVAL MODELS"
 
